@@ -2,7 +2,7 @@ package com.vetl.oop.lesson2;
 
 public class Computer {
     int ssd = 500;
-    int ram;
+    long ram;
 
     Computer() {
         System.out.println("Я был создан");
@@ -12,13 +12,27 @@ public class Computer {
         ssd = newSsd;
     }
 
-    Computer(int newSsd, int newRam) {
-        ssd = newSsd;
+    Computer(int ssd, long newRam) {
+        this.ssd = ssd;
+        ram = newRam;
+    }
+
+    Computer(long newRam, int ssd) {
+        this.ssd = ssd;
         ram = newRam;
     }
 
     void load() {
+
         System.out.println("Я загрузился");
+    }
+
+    void load(boolean open) {
+        System.out.println("Я загрузился");
+        if (open) {
+            System.out.println("Я открыл крышку");
+        }
+
     }
 
     void printState() {
