@@ -9,7 +9,7 @@ public class ComputerRunner {
         Computer computer2 = new Computer(1050);
         computer2.printState();
 
-        Computer computer3 = new Computer(10000L, 10000);
+        Computer computer3 = new Computer(10000, 1000);
         computer3.printState();
         computer3.load(true);
     }

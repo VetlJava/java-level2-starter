@@ -1,29 +1,27 @@
 package com.vetl.oop.lesson2;
 
 public class Computer {
-    int ssd = 500;
-    long ram;
-
-    Computer() {
-        System.out.println("Я был создан");
-    }
+    private int ssd = 500;
+    private long ram;
 
     Computer(int newSsd) {
         ssd = newSsd;
     }
 
-    Computer(int ssd, long newRam) {
+    protected Computer(int ssd, long newRam) {
         this.ssd = ssd;
         ram = newRam;
     }
 
-    Computer(long newRam, int ssd) {
-        this.ssd = ssd;
-        ram = newRam;
+    public Computer() {
+        System.out.println("Я был создан");
     }
 
+//    Computer(long newRam, int ssd) {
+//        this.ssd = ssd;
+//        ram = newRam;
+//    }
     void load() {
-
         System.out.println("Я загрузился");
     }
 
@@ -34,7 +32,7 @@ public class Computer {
         }
 
     }
-
+//      [модификаторы] returnValue name([params])
     void printState() {
         System.out.println("Ssd: " + ssd);
         System.out.println("Ram: " + ram);
