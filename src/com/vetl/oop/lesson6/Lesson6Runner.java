@@ -8,6 +8,6 @@ public class Lesson6Runner {
 
         Computer computer = new Computer();
         com.vetl.oop.lesson1.Computer c = new com.vetl.oop.lesson1.Computer();
-        
+
     }
 }
